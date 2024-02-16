@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer></script>
+
+  <title>Giphy</title>
+</head>
+
+<body>
+  <div class="header">
+    <div>
+      <button onclick="getCategoryGifs('dog')">Dog</button>
+      <button onclick="getCategoryGifs('cat')">Cat</button>
+      <button onclick="getCategoryGifs('rabbit')">Rabbit</button>
+      <button onclick="getCategoryGifs('skunk')">Skunk</button>
+      <button onclick="getCategoryGifs('goldfish')">Goldfish</button>
+      <button onclick="getCategoryGifs('bird')">bird</button>
+      <button onclick="getCategoryGifs('turtle')">turtle</button>
+      <button onclick="getCategoryGifs('ferret')">ferret</button>
+      <button onclick="getCategoryGifs('sugar glider')">sugar glider</button>
+      <button onclick="getCategoryGifs('chinchilla')">chinchilla</button>
+      <button onclick="getCategoryGifs('hedgehog')">hedgehog</button>
+      <button onclick="getCategoryGifs('hermit crab')">hermit crab</button>
+      <button onclick="getCategoryGifs('gerbil')">gerbil</button>
+      <button onclick="getCategoryGifs('pygmy goat')">pygmy goat</button>
+      <button onclick="getCategoryGifs('chicken')">chicken</button>
+      <button onclick="getCategoryGifs('capybara')">capybara</button>
+      <button onclick="getCategoryGifs('teacup pig')">teacup pig</button>
+      <button onclick="getCategoryGifs('serval')">serval</button>
+      <button onclick="getCategoryGifs('salamander')">salamander</button>
+      <button onclick="getCategoryGifs('frog')">frog</button>
+    </div>
+    <div>
+      <h1>Add GIFs</h1>
+      <input type="text" placeholder="Search GIFs" value="" id="searchInput" />
+      <button onclick="searchGif()">
+        Search
+      </button>
+    </div>
+    <div id="dynamicButtons" >
+    </div>
+  </div>
+
+  <div class="result">
+    <div class="loading" id="loadingIndicator">
+      <div class="loader"></div>
+    </div>
+    <div class="list" id="resultContainer">
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
